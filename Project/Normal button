@@ -1,0 +1,20 @@
+<audio id='myAudio'>
+<source src="https://animaapp.s3.amazonaws.com/sample-files/audio/pixabay-free-service-bell-ring-14610.mp3" type="audio/mpeg" />
+</audio>
+<button class="fill-transparent-button" onclick="playAudio()"></button>
+
+<style>
+.fill-transparent-button {
+  height: 100%; 
+  width: 100%; 
+  left: 0px;
+  background-color: #ffffff00; 
+  border: none;
+</style>
+<script>
+var myAudio = document.getElementById("myAudio");
+function playAudio() {
+myAudio.currentTime = 0;
+myAudio.play();
+}
+</script>
